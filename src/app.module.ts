@@ -9,6 +9,7 @@ import { ChatModule } from './chat/chat.module';
 import { PrismaModule } from './prisma.module';
 import { NotifyModule } from './notify/notify.module';
 import { ProductModule } from './product/product.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { ProductModule } from './product/product.module';
     }),
     ChatModule,
     ProductModule,
+    AuthModule,
   ],
   providers: [ChatGateway],
 })
